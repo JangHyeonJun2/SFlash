@@ -277,6 +277,9 @@
 			<div class="col-md-12 heading-section text-center ftco-animate mb-5">
 				<h2 class="mb-2">SFlash 아키텍쳐</h2>
 			</div>
+			<!-- 아키텍처 이미지 -->
+			<div class="architecture" style="background-image: url(images/archi.jpeg);">
+			</div>
 		</div>
 		<div class="archi" style="background-image: url(images/archi.jpeg);">
 
@@ -344,17 +347,17 @@
 					<div class="row no-gutters align-items-center">
 
 						<div class="col-md-5 order-md-last img tempH ">
-							<div class="img1 scale-down" style="background-image: url(images/sh3.png); height: 50%; ">
+							<div class="img1 scale-down" style="background-image: url(images/sh3.png); height: 100%; ">
 							</div>
-							<div class="img1 scale-down" style="background-image: url(images/sh2.png); height: 50%">
-							</div>
+							<!-- <div class="img1 scale-down" style="background-image: url(images/sh2.png); height: 50%">
+							</div> -->
 						</div>
 						<div class="col-md-7">
 							<div class="text pt-5 pr-md-5 ftco-animate">
 								<div class="px-4 px-lg-4">
 									<div class="desc text-md-left">
 										<div class="top">
-											<h4 class="mb-2">사용자의 편의성 개선(소셜, 패치, 무한 스크롤) - BackEnd </h4>
+											<h4 class="mb-2">사용자의 편의성 개선(소셜로그인, 페치조인, 무한 스크롤) - BackEnd </h4>
 											<h5>2-1. 소셜 로그인 API 서비스를 사용하였습니다.</h5>
 										</div>
 										<div class="absolute">
@@ -484,10 +487,9 @@
 										<div class="absolute">
 											<div style="padding-left: 0px">
 												○ 기존의 FileZila로 배포를 했을 때는 팀원들이 Push를 하게되면 Merge와 동시에 build, *.jar파일 옮기기,
-												ec2에 옮겨서 배포하기 라는 비용이 들었다. <br>
-												○ Travis,s3,deploy,nginx를 활용하여 배포를 담당하는 사람이 Push를 하게 되면 *.jar파일이 s3로
-												옮겨지고 그 파일이 deploy라는 AWS기능에 옮겨지고 deploy를 통해서 배포를 할 수 있도록 CI/CD를
-												구현하였습니다.<br>
+												ec2에 옮겨서 배포하기 라는 시간 비용이 들었다. <br>
+												○ Travis,스크립트,nginx 활용하여 무중단 배포를 구현하였고 이 결과 코드를 Push 하게 되면 배포와 서버의 작동이
+												자동화가 되기 때문에 개발자의 편의와 시간이 줄어들었습니다.<br>
 											</div>
 											<!-- <div class="icon d-flex align-items-center mb-4">
 												<div class="img" style="background-image: url(images/person_2.jpg);">
@@ -508,8 +510,10 @@
 
 				<div class="col-md-12 portfolio-wrap">
 					<div class="row no-gutters align-items-center">
-						<div class="col-md-5 order-md-last img" style="background-image: url(images/work-6.jpg);">
-
+						<div class="col-md-5 order-md-last img tempH ">
+							<div class="img1  scale-down"
+								style="background-image: url(images/minkyu.png); height: 100%; ">
+							</div>
 						</div>
 						<div class="col-md-7">
 							<div class="text pt-5 pr-md-5 ftco-animate">
@@ -627,11 +631,193 @@
 							</div>
 						</div>
 					</div>
-
+					<!-- 개선점!!!!!!!!!!!!!!!!!!!!!! -->
 					<br><br><br>
+					<div class="col-md-12 heading-section text-center ftco-animate mb-5">
+						<h2 class="mb-2">개선점</h2>
+					</div>
 
 
+					<!--  -->
 
+					<div class="col-md-12 portfolio-wrap">
+						<div class="row no-gutters align-items-center">
+
+							<div class="col-md-5 order-md-last img tempH ">
+								<div class="img1 scale-down"
+									style="background-image: url(images/after1.jpg); height: 100%; ">
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="text pt-5 pr-md-5 ftco-animate">
+									<div class="px-4 px-lg-4">
+										<div class="desc text-md-left">
+											<div class="top">
+												<h4 class="mb-2">상세모달창이 조금 작아서 사진볼때 불편한 것 같습니다 :)</h4>
+												<h5>상세보기 모달창 사이즈확대와 반응형으로 개선</h5>
+											</div>
+											<div class="absolute">
+												<div style="padding-left: 0px">
+													<!-- ○ 안전하고 신뢰할 수 있는 방법으로 사용자들이 가입할 수 있게 네이버, 카카오, 구글 소셜로그인 구현하였습니다.<br>
+									○ 이미 이메일이 가입된 경우 소셜로그인을 사용시 같은 유저로 볼 수 있도록 구현하였습니다.<br>
+									○ provider가 naver, google, kakao 마다 다른 userInfo를 만들어서 받을 수 있도록
+									구현하였습니다.(각 소셜로그인마다 보내주는 변수명을 다르게 하였습니다.) -->
+												</div>
+												<!-- <div class="d-flex w-100">
+													<div class="icon d-flex align-items-center ml-md-auto mb-4">
+														<div class="img"
+															style="background-image: url(images/seungwook.jpg);"></div>
+														<div class="position pl-3 text-left">
+															<h4 class="mb-0">김승욱</h4>
+															<span>kim seung wook</span>
+														</div>
+													</div>
+												</div> -->
+												<!-- <p><a href="#" class="custom-btn">View Portfolio</a></p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--  -->
+					<div class="col-md-12 portfolio-wrap">
+						<div class="row no-gutters align-items-center">
+							<div class="col-md-5 img tempH ">
+								<div class="img1 scale-down"
+									style="background-image: url(images/after2.jpg); height: 100%; ">
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="text pt-5 pl-md-5 pl-md-4 ftco-animate">
+									<div class="px-4 px-lg-4">
+										<div class="desc">
+											<div class="top">
+												<h4 class="mb-2">지도를 활용한 사용자 인터페이스 개선해주세요!</h4>
+												<h5>현재 사용자 위치를 나타내는 geolocation기능과 지도 천체보기 내주변만 보기 스카이뷰 보기등의 추가기능 개선
+												</h5>
+											</div>
+											<div class="absolute">
+												<div style="padding-left: 0px">
+													<!-- ○ 기존의 FileZila로 배포를 했을 때는 팀원들이 Push를 하게되면 Merge와 동시에 build, *.jar파일 옮기기,
+								ec2에 옮겨서 배포하기 라는 비용이 들었다. <br>
+								○ Travis,s3,deploy,nginx를 활용하여 배포를 담당하는 사람이 Push를 하게 되면 *.jar파일이 s3로
+								옮겨지고 그 파일이 deploy라는 AWS기능에 옮겨지고 deploy를 통해서 배포를 할 수 있도록 CI/CD를
+								구현하였습니다.<br> -->
+												</div>
+												<!-- <div class="icon d-flex align-items-center mb-4">
+												<div class="img" style="background-image: url(images/person_2.jpg);">
+												</div>
+												<div class="position pl-3">
+													<h4 class="mb-0">Jamie Jonson</h4>
+													<span>avo.com</span>
+												</div>
+											</div>
+											<p><a href="#" class="custom-btn">View Portfolio</a></p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--  -->
+
+					<div class="col-md-12 portfolio-wrap">
+						<div class="row no-gutters align-items-center">
+
+							<div class="col-md-5 order-md-last img tempH ">
+								<div class="img1 scale-down"
+									style="background-image: url(images/after3.jpg); height: 100%; ">
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="text pt-5 pr-md-5 ftco-animate">
+									<div class="px-4 px-lg-4">
+										<div class="desc text-md-left">
+											<div class="top">
+												<h4 class="mb-2">커뮤니티란에 그리드 개수 조절 가능했으면 좋겠습니다.</h4>
+												<h5>커뮤니티 게시물 줄 수 선택해서 보기 개선</h5>
+											</div>
+											<div class="absolute">
+												<div style="padding-left: 0px">
+													<!-- ○ 안전하고 신뢰할 수 있는 방법으로 사용자들이 가입할 수 있게 네이버, 카카오, 구글 소셜로그인 구현하였습니다.<br>
+												○ 이미 이메일이 가입된 경우 소셜로그인을 사용시 같은 유저로 볼 수 있도록 구현하였습니다.<br>
+												○ provider가 naver, google, kakao 마다 다른 userInfo를 만들어서 받을 수 있도록
+												구현하였습니다.(각 소셜로그인마다 보내주는 변수명을 다르게 하였습니다.) -->
+												</div>
+												<!-- <div class="d-flex w-100">
+																	<div class="icon d-flex align-items-center ml-md-auto mb-4">
+																		<div class="img"
+																			style="background-image: url(images/seungwook.jpg);"></div>
+																		<div class="position pl-3 text-left">
+																			<h4 class="mb-0">김승욱</h4>
+																			<span>kim seung wook</span>
+																		</div>
+																	</div>
+																</div> -->
+												<!-- <p><a href="#" class="custom-btn">View Portfolio</a></p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--  -->
+
+					<!--  -->
+					<div class="col-md-12 portfolio-wrap">
+						<div class="row no-gutters align-items-center">
+							<div class="col-md-5 img tempH ">
+								<div class="img1 scale-down"
+									style="background-image: url(images/after4.jpg); height: 100%; ">
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="text pt-5 pl-md-5 pl-md-4 ftco-animate">
+									<div class="px-4 px-lg-4">
+										<div class="desc">
+											<div class="top">
+												<h4 class="mb-2">사용방법이 나와있으면 좋겠습니다 :)</h4>
+												<h5>접속시 첫 화면에 사용방법이 설명되있는 팝업창으로 사용방법 설명!</h5>
+											</div>
+											<div class="absolute">
+												<div style="padding-left: 0px">
+													<!-- ○ 기존의 FileZila로 배포를 했을 때는 팀원들이 Push를 하게되면 Merge와 동시에 build, *.jar파일 옮기기,
+												ec2에 옮겨서 배포하기 라는 비용이 들었다. <br>
+												○ Travis,s3,deploy,nginx를 활용하여 배포를 담당하는 사람이 Push를 하게 되면 *.jar파일이 s3로
+												옮겨지고 그 파일이 deploy라는 AWS기능에 옮겨지고 deploy를 통해서 배포를 할 수 있도록 CI/CD를
+												구현하였습니다.<br> -->
+												</div>
+												<!-- <div class="icon d-flex align-items-center mb-4">
+																<div class="img" style="background-image: url(images/person_2.jpg);">
+																</div>
+																<div class="position pl-3">
+																	<h4 class="mb-0">Jamie Jonson</h4>
+																	<span>avo.com</span>
+																</div>
+															</div>
+															<p><a href="#" class="custom-btn">View Portfolio</a></p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- <div class="img-container">
+		<div class="after-himg-1" style="background-image: url(images/모달창확대.jpg);"></div>
+		<div class="after-himg-2" style="background-image: url(images/배경사진.jpg);"></div>
+		<div class="after-himg-3" style="background-image: url(images/확대버튼.jpg);"></div>
+		<div class="after-himg-4" style="background-image: url(images/아키텍처.jpg);"></div>
+	</div> -->
 
 
 				</div>
@@ -644,7 +830,7 @@
 					<h2>최종 성과</h2>
 				</div>
 			</div>
-			<div class="row d-flex">
+			<!-- <div class="row d-flex">
 				<div class="col-md-3 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
 						<div class="text">
@@ -713,7 +899,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="degree-left-footer"></div>
 	</section>
