@@ -296,96 +296,6 @@
 
 		<div class="container">
 			<div class="row no-gutters">
-				<div class="col-md-12 portfolio-wrap mt-0">
-					<div class="row no-gutters align-items-center">
-						<div class="col-md-5 img tempH ">
-							<div class="img1 scale-down" style="background-image: url(images/sh1.png); height: 50%; ">
-							</div>
-							<div class="img1 scale-down" style="background-image: url(images/sh2.png); height: 50%">
-							</div>
-						</div>
-
-
-						<div class="col-md-7">
-							<div class="text pt-5 pl-0 pl-lg-5 pl-md-4 ftco-animate">
-								<div class="px-4 px-lg-4">
-									<div class="desc">
-										<div class="top">
-											<!-- <span class="subheading">Web Design</span> -->
-											<h4 class="mb-2">사용자들이 게시글 작성에서 다중사진을 업로드 할 수 있는 CRUD - BackEnd</h4>
-											<h5>1-1. Multipart를 List로 사용</h5>
-										</div>
-										<div class="absolute">
-											<div style="padding-left: 0px">
-												○ 사용자들이 SFlash에서 여러장의 사진으로 해당 스팟에 대한 정보를 얻을 수 있도록 기능을 구현하였습니다.<br>
-												○ 게시물 수정 기능에서도 사용자들이 업로드한 사진을 삭제 또는 다른 사진을 추가할 수 있도록 구현하였습니다.
-											</div>
-											<div style="padding-left: 30px">
-												■ 여기서 삭제는 DB에 저장된 이미지 URL만 삭제하는 것이 아니라 S3에서
-												제공하는
-												DeleteObjectsRequest 를 사용하여 S3에 업로드된 이미지도 삭제하여 S3의 용량도 확보하였다
-											</div>
-
-											<!-- <div class="icon d-flex align-items-center mb-4">
-												<div class="img" style="background-image: url(images/seungwook.jpg);">
-												</div>
-												<div class="position pl-3">
-													<h4 class="mb-0">김승욱</h4>
-													<span>kim seung wook</span>
-												</div>
-											</div> -->
-											<!-- <p><a href="#" class="custom-btn">View Portfolio</a></p> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-12 portfolio-wrap">
-					<div class="row no-gutters align-items-center">
-
-						<div class="col-md-5 order-md-last img tempH ">
-							<div class="img1 scale-down" style="background-image: url(images/sh3.png); height: 100%; ">
-							</div>
-							<!-- <div class="img1 scale-down" style="background-image: url(images/sh2.png); height: 50%">
-							</div> -->
-						</div>
-						<div class="col-md-7">
-							<div class="text pt-5 pr-md-5 ftco-animate">
-								<div class="px-4 px-lg-4">
-									<div class="desc text-md-left">
-										<div class="top">
-											<h4 class="mb-2">사용자의 편의성 개선(소셜로그인, 페치조인, 무한 스크롤) - BackEnd </h4>
-											<h5>2-1. 소셜 로그인 API 서비스를 사용하였습니다.</h5>
-										</div>
-										<div class="absolute">
-											<div style="padding-left: 0px">
-												○ 안전하고 신뢰할 수 있는 방법으로 사용자들이 가입할 수 있게 네이버, 카카오, 구글 소셜로그인 구현하였습니다.<br>
-												○ 이미 이메일이 가입된 경우 소셜로그인을 사용시 같은 유저로 볼 수 있도록 구현하였습니다.<br>
-												○ provider가 naver, google, kakao 마다 다른 userInfo를 만들어서 받을 수 있도록
-												구현하였습니다.(각 소셜로그인마다 보내주는 변수명을 다르게 하였습니다.)
-											</div>
-											<!-- <div class="d-flex w-100">
-												<div class="icon d-flex align-items-center ml-md-auto mb-4">
-													<div class="img"
-														style="background-image: url(images/seungwook.jpg);"></div>
-													<div class="position pl-3 text-left">
-														<h4 class="mb-0">김승욱</h4>
-														<span>kim seung wook</span>
-													</div>
-												</div>
-											</div> -->
-											<!-- <p><a href="#" class="custom-btn">View Portfolio</a></p> -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
 				<div class="col-md-12 portfolio-wrap">
 					<div class="row no-gutters align-items-center">
 						<div class="col-md-5 img tempH ">
@@ -399,7 +309,8 @@
 								<div class="px-4 px-lg-4">
 									<div class="desc">
 										<div class="top">
-											<h5>2-2. /map(GetMapping), /board(GetMapping)에 대한 API를 호출할 때 시간 최적화 -
+											<h4 class="mb-2">사용자 편의성 개선사항1 - BackEnd</h4>
+											<h5>/map(GetMapping), /board(GetMapping)에 대한 API를 호출할 때 시간 최적화 -
 												BackEnd</h5>
 										</div>
 										<div class="absolute">
@@ -441,7 +352,8 @@
 								<div class="px-4 px-lg-4">
 									<div class="desc text-md-left">
 										<div class="top">
-											<h5>2-3. 무한 스크롤 기능 구현 - BackEnd</h5>
+											<h4 class="mb-2">사용자 편의성 개선사항2 - BackEnd</h4>
+											<h5>무한 스크롤 기능 구현 - BackEnd</h5>
 										</div>
 										<div class="absolute">
 											<div style="padding-left: 0px">
@@ -482,7 +394,7 @@
 									<div class="desc">
 										<div class="top">
 											<h4 class="mb-2">무중단 CI/CD - BackEnd</h4>
-											<h5>3-1. 개발자 배포과정에서의 편의성 개선</h5>
+											<h5>개발자 배포과정에서의 편의성 개선</h5>
 										</div>
 										<div class="absolute">
 											<div style="padding-left: 0px">
@@ -512,7 +424,7 @@
 					<div class="row no-gutters align-items-center">
 						<div class="col-md-5 order-md-last img tempH ">
 							<div class="img1  scale-down"
-								style="background-image: url(images/minkyu.png); height: 100%; ">
+								style="background-image: url(images/userButton.JPG); height: 100%; ">
 							</div>
 						</div>
 						<div class="col-md-7">
@@ -520,16 +432,14 @@
 								<div class="px-4 px-lg-4">
 									<div class="desc text-md-left">
 										<div class="top">
-											<h4 class="mb-2">지도를 활용한 사용자 인터페이스 개선 - FrontEnd</h4>
-											<h5>1. 사용자의 현재접속위치를 이용하는 geolocation 기능을 사용.</h5>
+											<h4 class="mb-2">카카오 지도 API를 활용한 사용자 인터페이스 개선 - FrontEnd</h4>
+											<h5>여러 기능들을 한번에 사용할 수 있는 컨트롤 타워</h5>
 										</div>
 										<div class="absolute">
 											<div style="padding-left: 0px">
-												○ 사용자가 자신의 주변 스팟을 쉽게 확인하고, 지도상에서 현재위치로 쉽게 이동할 수 있는 기능을 구현하기 위해서 html5에
-												추가된 자바스크립트 API인 geolocation을 이용 <br>
-												○ geolocation은 보안상의 이유로 보안 프로토콜을 지원하는 https에서만 가능하므로 https 도메인으로 배포함
+												○ 카카오 지도 API가 제공하는 여러 함수들을 활용해서 사용자가 지도를 제어하는 조작을  쉽게 할 수 있는 제어창을 만들었다. <br>
+												
 												<br>
-												○ https로 배포할 수 있도록 AWS에서 SSL인증서를 받고 그 인증서로 AWS의 클라우드프론트에 설정을 해주었음 <br>
 											</div>
 
 										</div>
